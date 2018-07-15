@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { Navbar } from '../src/Components/Logout/navbar';
 
 class App extends Component {
   render() {
     return (
-      <h1> Usman </h1>
+      <Navbar />
     );
   }
 }
