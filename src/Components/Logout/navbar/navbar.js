@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import {  Route, Link } from 'react-router-dom';
-import SignUpPage from './SignUpPage'
+import SignUpPage from './SignUp/SignUpPage';
 
-class Navbar extends Component {
+export default class Navbar extends Component {
     render() {
       return (
         <div className="container-fluid">
-          <Link to="/signup" exact Component={SignUpPage} />
+          <Link to="/signup" >Register</Link>
+          <Route exact path="/signup" component={SignUpPage} />
         </div>
       );
     }
   }
-  
-  export default Navbar;
