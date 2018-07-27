@@ -80,4 +80,4 @@ window.$(".previous").click(function(){
 
 window.$(".submit").click(function(){
 	return false;
-})
+});
